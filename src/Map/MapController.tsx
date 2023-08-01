@@ -5,6 +5,7 @@ import * as React from "react";
 import { Stores } from "../Stores/Stores";
 import MapStore from "./MapStore";
 import { Config } from "Config/types/config";
+import { when } from '@arcgis/core/core/reactiveUtils';
 
 export default class MapController {
   private stores!: Stores | undefined;
@@ -43,6 +44,7 @@ export default class MapController {
     // making sure that mapView is initialized
     this.mapView.when((v: MapView) => {
       this.mapStore.setMapView(v);
+      when(() => v.center, (c) => this.mapStore.setCenter(c));
     });
   };
 }
