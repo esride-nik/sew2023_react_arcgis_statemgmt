@@ -2,6 +2,8 @@
 ### Sam Matenaer · Niklas Köhn
 # React and the ​ArcGIS Maps SDK for JavaScript​
 
+This repo was a one-trick-pony for the SEW talk and is now deprecated and no longer maintained. If you're looking for the JSSDK / React / MobX pattern, please visit [this repo](https://github.com/esride-nik/arcgis-jssdk_react_mobx_pattern).
+
 ## Group 1 Task
 
 Update the code so the ``StatusCmp`` displays the center point of the map and updates as it changes when moving the map.
